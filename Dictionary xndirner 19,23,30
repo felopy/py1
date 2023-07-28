@@ -1,0 +1,22 @@
+#xndir 23
+ka = [{'item': 'item1', 'mount': 247}, {'item': 'item2', 'mount': 300}, {'item': 'item1', 'Amount' :1110 }]
+print("item1",ka[0].get("mount")+ka[2].get("Amount"))
+print("item2",ka[1].get("mount"))
+
+# # xndir 30
+mk = {"a1":23,"a2":134,"a3":123,"a4":256}
+
+ml = list(mk.values())
+ml.sort()
+print(ml[-1])
+print(ml[-2])
+print(ml[-3])
+
+#dictionary xndir 19
+a = {"a":12,"b":13,"c":14}
+b = {"a":56,"b":34,"c":345}
+ak ={}
+ak["a"] = a.get("a") + b.get("a")
+ak["b"] = a.get("b") + b.get("b")
+ak["c"] = a.get("c") + b.get("c")
+print(ak)
