@@ -1,0 +1,53 @@
+import random
+
+countries = {
+    "Dania": "Kopenhagen",
+    "Belarus": "Minsk",
+    "Ukraine": "Kiev",
+    "Serbia": "Belgrad",
+    "England": "London",
+    "Armenia": "Yerevan",
+    "Ruminia": "Bucharest",
+    "Bulgharia": "Sofia",
+    "Brazil": "Brasilia",
+    "Spain": "Madrid",
+    "Austria": "Vienna",
+    "China": "Beijing",
+    "India": "Delhi",
+    "Algeria": "Algiers",
+    "Germany": "Berlin",
+    "Moldova": "Chisinau",
+    "Italy": "Rome",
+    "Russia": "Moscow",
+    "Poland": "Warsaw",
+    "Norway": "Oslo"
+}
+
+countriesl = list(countries.keys())
+
+print("Welcome to the Capital City Guessing Game!")
+
+
+chances = 3
+
+while True:
+    randomcountry = random.choice(countriesl)
+    correctcap = countries[randomcountry]
+    
+    print("\nCountry:", randomcountry)
+    
+    for temp in range(chances):
+        userg = input("Your guess: ")
+        
+        if userg.lower() == correctcap.lower():
+            print("Correct!")
+            break
+        else:
+            chances_left = chances - temp - 1
+            if chances_left > 0:
+                print("Sorry, that's incorrect. You have", chances_left, "chance" if chances_left == 1 else "chances", "left.")
+            else:
+                print("Sorry, you've used all your chances. The correct answer is", correctcap)
+                break
+
+print("Thanks for playing!")
