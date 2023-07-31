@@ -1,0 +1,54 @@
+#count
+def count(A,k):
+ c = 0
+ for i in range(len(A)):
+    if k == A[i]:
+        c+=1
+ return c
+print(count("fffggg","f"))
+
+#find
+def find(a,b):
+    for i in  range(len(a)):
+        if a[i] == b:
+            
+         break
+    else:
+        print(-1)
+    return i
+print(find("dffgfgfg","d"))
+
+#repleace:count
+def repcount(A,old,new,cnt):
+    new_A = ""
+    count = 0
+    for i in range(len(A)):
+        if A[i] == old and count<cnt:
+         new_A+=new
+        count+=1
+    else:
+        new_A+=A[i]
+    return new_A
+print(repcount("repleace","e","i",2))
+
+#phone number
+def phnum(phonenumber):
+    for num in range(0,10):
+        if num != phonenumber:
+          return num
+print(phnum(3655550))
+#phonenumber
+def phonenumbers(phone_number):
+    all_digits = set("0123456789")
+    used_digits = set(phone_number)
+    unused_digits = all_digits - used_digits
+    return sorted(list(unused_digits))
+
+def kam():
+    phone_number = input("Enter the phone number: ")
+    unused_numbers = phonenumbers(phone_number)
+    print("Numbers not used in the phone number:", ", ".join(unused_numbers))
+
+if __name__ == "__main__":
+    kam()
+
