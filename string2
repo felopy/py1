@@ -1,0 +1,38 @@
+#swapcase
+def swapcase(a):
+    k =""
+    for i in range(len(a)):
+        if 122 >= ord(a[i]) >=97:
+            k+=chr(ord(a[i])-32)
+        else:
+            97 >= ord((a[i])) >=62
+            k += chr(ord(a[i])+32)
+    return k
+print(swapcase("wfsffDEDCfgtw")
+
+#index
+def index(word,tiv):
+    for i in range(len(word)):
+        if word[i] == tiv:
+          return i
+    return -1
+        
+print(index("amen","n"))
+
+#capitalize
+def capitalize(word):
+
+    b = chr(ord(word[0])-32)+word[1:]+chr(ord(word[-1])-32)
+    return b
+print(capitalize("kdhdhjej"))
+
+
+#count
+def count(A,k):
+ c = 0
+ for i in range(len(A)):
+    if k == A[i]:
+        c+=1
+ return c
+print(count("fffggg","f"))
+
