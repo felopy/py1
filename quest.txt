@@ -1,0 +1,48 @@
+What is the capital of Armenia1
+Pekin1,Yerevan2,Gyumri3,Buenos Aires4
+2
+What is the capital of France2
+Paris1,Yerevan2,Gyumri3,Buenos Aires4
+1
+What is the capital of China3
+Tbilisi1,Paris2,krasnodar3,Pekin4
+4
+What is the capital of USA4
+Tbilisi1,Paris2,Washington3,Pekin4
+3
+What is the capital of Brazil5
+Munchen1,Washington2,Pekin3,Brazil4
+4
+What is the capital of Georgia6
+Tbilisi1,Washington2,Pekin3,Brazil4
+1
+What is the capital of Germany7
+Tokio1,Berlin2,Tbilisi3,Brazil4
+2
+What is the capital of Austria8
+Tokio1,Washington2,Viena3,Brazil4 
+3
+What is the capital of Italy9
+Yerevan1,Berlin2,Lisbon3,Roma4
+4
+What is the capital of Spain10
+Madrid1,Erevan2,Viena3,Roma4
+1
+What is the capital of the United Kingdom11
+Minsk1,Erevan2,London3,Roma4      
+3
+What is the capital of Italy12
+Barcelona1,Roma2,Lisbon3,Brazil4
+2
+What is the capital of the UAE13
+Kopenhagen1,Washington2,Gyumri3,Abu Dhabi4
+4
+What is the capital of Portugal14
+Sofia1,Lisbon2,Gyumri3,Buenos Aires4
+2
+What is the capital of Argentina15
+Buenos Aires1,Washington2,Gyumri3,Atenq4
+1
+what is a capital of Turkey16
+berlin1,Ankara2,almati3,Moscow4
+2
