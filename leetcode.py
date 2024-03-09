@@ -26,7 +26,7 @@ def roman_int(s):
         if s[i] in m:
             if i < len(s) - 1 and s[i:i+2] in ["IV", "IX", "XL", "XC", "CD", "CM"]:
                 c += m[s[i+1]] - m[s[i]]
-                i += 2  # Skip the next character
+                i += 2  
             else:
                 c += m[s[i]]
                 i += 1
