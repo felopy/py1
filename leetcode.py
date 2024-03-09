@@ -13,7 +13,7 @@ def longest(ml):
 m = ['amdsaa','am','amvor',"kam"]
 print(longest(m))
 
-#15
+#13
 def roman_int(s):
     m = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
     c = 0
@@ -38,4 +38,20 @@ def roman_int(s):
         return c
 
 print(roman_int(input("Enter Roman numeral: ")))
+
+#20
+def valid(s):
+    k = 0
+    for i in range(len(s)):
+        if s[i] == "(" and s[-(i+1)] == ")" or (s[i] == "(" and s[i+1] == ")"):
+            k += 1
+        elif s[i] == "[" and s[-(i+1)] == "]" or (s[i] == "[" and s[i+1] == "]"):
+            k += 1
+        elif s[i] == "{" and s[-(i+1)] == "}" or (s[i] == "{" and s[i+1] == "}"):
+            k += 1
+    if k == (len(s))//2:
+        return True
+    else:
+        return False
+print(valid(input("Enter parentheses: ")))
 
